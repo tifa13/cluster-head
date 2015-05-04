@@ -73,23 +73,23 @@ mode[1]=0;
         
         //sending command to client to change sleep time mode is a declared buffer of size 1
        // len= length 
-        if(wifi.send(mux_id,mode,1)) {
-            Serial.print("change mode ok\r\n");
-        } else {
-            Serial.print("change mode err\r\n");
-        }
-        int tmp = mode[0];
-        if(tmp==0){
-          mode[0]=1;
-        }else{
-          mode[0]=0;
-        }
-        Serial.println(mode[0]);
-        Serial.print("Status:[");
-        Serial.print(wifi.getIPStatus().c_str());
-        Serial.println("]");
-    }
-    
+//        if(wifi.send(mux_id,mode,1)) {
+//            Serial.print("change mode ok\r\n");
+//        } else {
+//            Serial.print("change mode err\r\n");
+//        }
+//        int tmp = mode[0];
+//        if(tmp==0){
+//          mode[0]=1;
+//        }else{
+//          mode[0]=0;
+//        }
+//        Serial.println(mode[0]);
+//        Serial.print("Status:[");
+//        Serial.print(wifi.getIPStatus().c_str());
+//        Serial.println("]");
+//    }
+//    
 }
 
 
